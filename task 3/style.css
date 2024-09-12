@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('bg.png'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.converter-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label, select, input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+
+/* Add flexbox to buttons to display side by side */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  width: 48%; /* Each button will take about half the available space */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: black; /* Changes hover background to blue */
+  color: white; /* Keep the text white */
+}
+
+#resetBtn {
+  background-color: #dc3545;
+}
+
+#resetBtn:hover {
+  background-color:black; /* Changes hover background to red */
+  color: white; /* Keep the text white */
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#output {
+  font-size: 1.2em;
+}
+
+/* Keyframes for heading animation */
+@keyframes heading-animation {
+  25% {
+    color: blue;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: darkorange;
+  }
+  100% {
+    color: green;
+  }
+}
+
+h1 {
+  text-align: center;
+  animation: heading-animation 4s infinite; /* Apply the animation */
+}
+
